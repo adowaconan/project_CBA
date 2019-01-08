@@ -3,6 +3,16 @@
 Created on Sat Dec 29 12:44:59 2018
 
 @author: ning
+
+This script defines 2pt efficiency as the ratio between A and B, where A is the
+personal 2pt made = 2 * 2pt percentage
+and
+B is the game average 2pt made: 2 * 2pt percentage of everyone
+Higher than 0 means the player is more efficient than the average of the single game
+
+3pt efficiency is defined as the same while the scoring base is changed to 3 instead
+of 2
+
 """
 
 import pandas as pd
@@ -40,7 +50,8 @@ for ii,f in enumerate(working_data):
         temp.append(d)
 df = pd.concat(temp)
 
-df = df[df['player'] != '未确认']
+df = df[df['player'] != '未确认'] # take out the rows we don't want
+# let's plot the 2pt efficiency against 3pt efficiency for individual player
 for player,df_work in df.groupby('player'):
     plt.close('all')
     try:
@@ -62,7 +73,7 @@ for player,df_work in df.groupby('player'):
         g.fig.axes[0].axvline(0.,linestyle='--',color='black',alpha=0.5)
         g.savefig(os.path.join(figure_dir,'rsquared {}.png'.format(player)),
                   bbox_inches = 'tight')
-        
+
         g = sns.jointplot(x = '2Pt_eff',
                           y = '3Pt_eff',
                           data = df_work,
@@ -79,17 +90,3 @@ for player,df_work in df.groupby('player'):
         print('pass')
     plt.close('all')
 print('done')
-
-
-
-
-
-
-
-
-
-
-
-
-
-

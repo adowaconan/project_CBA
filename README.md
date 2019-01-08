@@ -8,5 +8,11 @@ a simple analysis of Chinese Basketball Association in the past 3 years (2016-20
 
 ## Results
 ### 3pt efficiency by 2pt efficiency
-###
+### 易建联 Yi Jian Lian, 6th overall NBA draft pick 2006
 ![asdf](https://github.com/adowaconan/project_CBA/blob/master/figures/correlation%20%E6%98%93%E5%BB%BA%E8%81%94.png)
+### 郭艾伦 No.1 point guard of CBA
+![adef](https://github.com/adowaconan/project_CBA/blob/master/figures/correlation%20%E9%83%AD%E8%89%BE%E4%BC%A6.png)
+### Jimmer Fredette, 10th overall NBA draft pick 2010
+![diapd](https://github.com/adowaconan/project_CBA/blob/master/figures/correlation%20%E5%BC%97%E9%9B%B7%E6%88%B4%E7%89%B9.png)
+### 林志杰 No.1 shotting guard of CBA from TaiWan
+![didsa](https://github.com/adowaconan/project_CBA/blob/master/figures/correlation%20%E6%9E%97%E5%BF%97%E6%9D%B0.png)
